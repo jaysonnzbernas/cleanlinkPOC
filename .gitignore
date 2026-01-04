@@ -1,0 +1,13 @@
+node_modules/
+.idea/
+.vscode/
+dist/
+coverage/
+*.log
+
+# Playwright
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+/playwright/.auth/
