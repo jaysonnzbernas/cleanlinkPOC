@@ -12,7 +12,6 @@ export class LoginPage extends BasePage {
         this.emailAddress = page.getByPlaceholder('Email Address');
         this.password = page.getByPlaceholder('Password');
         this.loginButton = page.getByRole('button', { name: 'Login' });
-
     }
 
     async navigate() {
