@@ -34,3 +34,7 @@ jobs:
         destination_dir: reports/${{ github.run_id }}
         enable_jekyll: false
         force_orphan: true
+    - name: Output Report URL
+      if: always()
+      run: |
+       echo "Playwright Report URL: https://jaysonnzbernas.github.io/cleanlinkPOC/reports/${{ github.run_id }}"
