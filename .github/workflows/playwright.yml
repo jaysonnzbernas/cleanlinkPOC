@@ -31,10 +31,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
-    # - name: Download Playwright Report Artifact
-    #   uses: actions/download-artifact@v4
-    #   with:
-    #     name: playwright-report      
+    - name: Download Playwright Report Artifact
+      uses: actions/download-artifact@v4
+      with:
+        name: playwright-report      
     - name: Upload Playwright Report to GitHub Pages
       if: always()
       uses: peaceiris/actions-gh-pages@v4
